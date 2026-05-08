@@ -10,9 +10,13 @@
 
 <body>
 
+<button id="theme-toggle">
+    🌙 Toggle Theme
+</button>
+
 <div class="container">
 
-    <h1>House Price Prediction</h1>
+    <h1>🏡 House Price Prediction</h1>
 
     <form action="/predict" method="post">
 
@@ -37,6 +41,16 @@
     </h2>
 
 </div>
+
+<script>
+
+const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
+
+</script>
 
 </body>
 </html>
